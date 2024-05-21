@@ -1,86 +1,17 @@
-
-
-/* Stile per la finestra fissa in alto */
-.finestra-fissa
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 55px;
-    background-color:white ;
-    padding: 10px;
-    box-sizing: border-box;
-    z-index: 9999;
-}
-
-
-.button-container
-{
-    display: flex;
-    justify-content: space-between;
-
-}
-/* Stili per i pulsanti */
-.Subscribe {
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    text-align: center;
-    border-radius: 4px;
-    background-color:#7D161E ; /* ok */
-    color: #fff;
-    border: none;
-    border-radius: 4px; /* ok */
-    margin-right: 10px;
-    margin-left : calc(100% - 400px);
-
-}
-.LogIN
-{
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    text-align: center;
-    border-radius: 4px;
-    background-color:#7D161E ; /* ok */
-    color: #fff;
-    border: none;
-    border-radius: 4px; /* ok */
-    margin-right:10px;
-}
-.menu_button
-{
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    border-radius: 4px;
-    background-color:transparent ; /* ok */
-    color: black;
-    border: none;
-    margin-left: 10px ;
-    white-space: nowrap;
-    font-weight: bold;
-
-}
-
-.search_icon
-{
-    margin-left: 10px;
-    margin-right: 10%;
-    margin-top: 5px;
-}
-
 /*----------------------------------------------------------------------------*/
 /* Codice per gestione menu laterale*/
 
 .menu_icon
 {
- margin-top: 8px;
+    margin-top: 11px;
+    margin-left: 5px;
+
     cursor: pointer;
+}
+.home_icon
+{
+    margin-right:10px;
+    padding : 0;
 }
 #overlay {
     display: none;
@@ -206,6 +137,92 @@
 }
 
 /*---------------------------------------------------------------------------------------------------------------------/
+/* Stile per la finestra fissa in alto */
+.finestra-fissa
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color:white ;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 9999;
+
+    align-items: center; /* Allinea verticalmente gli elementi */
+    justify-content: space-between; /* Spazia gli elementi orizzontalmente */
+
+}
+
+
+.button-container
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+/* Stili per i pulsanti */
+
+.finestra_fissa_buttons
+{
+    display: flex;
+    align-items: center;
+}
+.Subscribe {
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+    background-color:#7D161E ; /* ok */
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* ok */
+
+    margin-left: 10px;
+
+
+}
+.LogIN
+{
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 4px;
+    background-color:#7D161E ; /* ok */
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* ok */
+    margin-left: 10px;
+    margin-right:10px;
+}
+.menu_button
+{
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 4px;
+    background-color:transparent ; /* ok */
+    color: black;
+    border: none;
+    margin-left: 10px ;
+    white-space: nowrap;
+    font-weight: bold;
+
+}
+
+.search_icon
+{
+    margin-left: 10px;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+
+
+.scrolled .titolo {
+    display: none;
+}
+
+
 
 /* codice riguardandi le colonne */
 
@@ -215,12 +232,58 @@ h1.titolo
 {
     text-align: center; /* Testo centrato */
     margin-bottom: 10px; /* Margine inferiore */
-    margin-top: 70px;
+    margin-top: 20px;
     font-size: 50px;
     font-family: PTSerif, serif ;
 }
 
+.title
+{
 
+    margin-left: 120px;
+    flex: 1;
+    justify-content: center;
+    text-align:center;
+    display: flex;
+}
+.titolo_media
+{
+    display: none;
+    font-size:50px;
+    font-family: PTSerif, serif ;
+    margin: 0;
+    white-space:nowrap;
+}
+
+/* Stile quando scrolled */
+
+.scrolled .finestra_fissa {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color:white ;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 9999;
+
+    align-items: center; /* Allinea verticalmente gli elementi */
+    justify-content: space-between; /* Spazia gli elementi orizzontalmente */
+    border-bottom: 1px solid black;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2) inset;
+}
+.scrolled .horizontal-buttons,
+.scrolled .sub-menu {
+    display: none;
+}
+.scrolled .titolo_media {
+    display: block;
+}
+/* ----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+ */
 /* stile sottomenu */
 
 .horizontal-buttons {
@@ -258,10 +321,7 @@ h1.titolo
     color: red;
     text-decoration: underline;
 }
-/* ----------------------------------------------------------------------------------
--------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------
- */
+
 
 .trend
 {
@@ -310,8 +370,13 @@ h1.titolo
     color: darkred;
 }
 
+/* si occupa del ridimensionamento della pagina */
 
 
+/* ----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+ */
 
 
 
@@ -358,7 +423,7 @@ h1.titolo
 .contenuto
 {
     display: flex;
-    flex-direction: row;
+
     margin:0;
     align-items: center;
 }
@@ -367,7 +432,7 @@ h1.titolo
 {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Il testo va disposto in colonna */
+    flex-direction: column;
 }
 .main_image
 {
@@ -806,7 +871,7 @@ margin-left: 10px;
     font-weight: bold;
 }
 
-/*------------------OPINION---------------------------*/
+/*--------------------------------------------------OPINION---------------------------------------------------------*/
 .opinion_conteiner
 {
     width: 75%;
@@ -1007,3 +1072,191 @@ margin-left: 10px;
     margin-top: 20px;
     border-top: 1px solid #000;
 }
+
+
+/* ----------------------------------------------@MEDIA CODE----------------------------------------------------*/
+
+@media (max-width: 1030px) {
+    .horizontal-buttons,
+    .sub-menu {
+        display: none;
+    }
+    .horizontal-buttons-list ,.sub-menu-list
+    {
+        display: none;
+    }
+    h1.titolo
+    {
+        display: none;
+    }
+    .finestra_fissa
+    {
+        border-bottom: 1px solid black;
+        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
+    }
+    .titolo_media
+    {
+        display: block;
+    }
+    .Subscribe
+    {
+        display: none;
+    }
+    .LogIN
+    {
+        display: none;
+    }
+    .menu_button
+    {
+        display: none;
+    }
+
+    /* controllo layout pagina */
+    .main_container
+    {
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 20px;
+    }
+    .colonna-principale
+    {
+        width: 59%;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contenuto {
+        flex-direction: column; /* Disporre in colonna */
+        align-items: flex-start; /* Allineare al bordo sinistro */
+    }
+    .main_image {
+        margin-left: 0; /* Rimuovere il margine a sinistra */
+        width: 100%; /* Imposta la larghezza al 100% del contenitore */
+        margin-top: 20px; /* Aggiungi margine sopra l'immagine per distanziarla dal testo */
+    }
+    .colonna-secondaria
+    {
+        width: 39%;
+        margin-right: 10px;
+    }
+    .ads
+    {
+        display: none;
+        width: 0;
+    }
+    .photos
+    {
+        flex-direction: column;
+    }
+    .right_column {
+        width: 100%; /* Imposta la larghezza al 100% del contenitore */
+        margin-left: 0; /* Rimuovere il margine a sinistra */
+        margin-top: 20px; /* Aggiungi margine superiore per distanziarla dal testo */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .article {
+        width: 48%; /* Imposta la larghezza per far sì che due articoli si affianchino */
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
+    .article:nth-child(2n) {
+        margin-right: 0; /* Rimuove il margine destro per i secondi elementi di ogni riga */
+    }
+
+}
+
+
+/* Query @media per schermi con larghezza inferiore a 810px */
+@media (max-width: 810px) {
+    .main_colonne {
+        flex-direction: column; /* Disporre in colonna */
+    }
+
+    .colonna-principale {
+        width: 100%; /* Imposta la larghezza al 100% del contenitore */
+        margin-right: 0; /* Rimuovere il margine destro */
+    }
+
+    .articoli_image {
+        width: 85px; /* Riduci la larghezza dell'immagine degli articoli */
+        height: 55px; /* Riduci l'altezza dell'immagine degli articoli */
+    }
+
+    .testo_articoli h4 {
+        font-size: 15px; /* Riduci la dimensione del testo degli articoli */
+    }
+
+    .contenuto_articoli_sx,
+    .contenuto_articoli_dx {
+        display: flex; /* Aggiungi display: flex per allineare immagine e testo */
+        width: 48%; /* Imposta la larghezza per far sì che due articoli si affianchino */
+        margin-left: 1%; /* Margine tra articoli */
+        margin-right: 1%; /* Margine tra articoli */
+        margin-bottom: 20px;
+        border-bottom: 1px solid black; /* Aggiungi bordo inferiore */
+    }
+
+    .contenuto_articoli_dx {
+        margin-left: 1%; /* Imposta margine sinistro per articoli dx */
+    }
+
+    .contenuto_articoli_sx {
+        margin-right: 1%; /* Imposta margine destro per articoli sx */
+    }
+
+    .testo_articoli {
+        width: calc(100% - 85px - 20px); /* Larghezza del testo meno larghezza immagine meno margine */
+        margin-left: 20px; /* Margine tra immagine e testo */
+    }
+
+    .colonna-secondaria {
+        width: 100%; /* Imposta la larghezza al 100% del contenitore */
+        margin-top: 20px; /* Aggiungi margine superiore per distanziarla dal contenuto principale */
+    }
+
+    .three_columns {
+        width: 100%;
+        margin-bottom: 20px; /* Aggiunta di uno spazio tra le colonne */
+    }
+
+    .three_columns:last-child {
+        margin-right: 0;
+        margin-bottom: 0; /* Rimuovere lo spazio sotto l'ultima colonna */
+    }
+
+    .politics {
+        flex-direction: column;
+    }
+
+    .politics_left_column, .politics_right_column {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .politics_main_text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .opinion {
+        flex-direction: column;
+    }
+
+    .opinion_left_column, .opinion_right_column {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .opinion_main_text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
