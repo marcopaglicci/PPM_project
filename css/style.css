@@ -1,0 +1,1009 @@
+
+
+/* Stile per la finestra fissa in alto */
+.finestra-fissa
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color:white ;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+
+
+.button-container
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+/* Stili per i pulsanti */
+.Subscribe {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: center;
+    border-radius: 4px;
+    background-color:#7D161E ; /* ok */
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* ok */
+    margin-right: 10px;
+    margin-left : calc(100% - 400px);
+
+}
+.LogIN
+{
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    text-align: center;
+    border-radius: 4px;
+    background-color:#7D161E ; /* ok */
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* ok */
+    margin-right:10px;
+}
+.menu_button
+{
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 4px;
+    background-color:transparent ; /* ok */
+    color: black;
+    border: none;
+    margin-left: 10px ;
+    white-space: nowrap;
+    font-weight: bold;
+
+}
+
+.search_icon
+{
+    margin-left: 10px;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Codice per gestione menu laterale*/
+
+.menu_icon
+{
+ margin-top: 8px;
+    cursor: pointer;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    margin-left: 25%;
+    margin-top: 55px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* overlay grigio */
+    z-index: 1;
+}
+.sidenav {
+    margin-top: 55px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    font-weight: bold;
+}
+.sidebar_list {
+    margin: 0px;
+    list-style-type: none;
+}
+.sidenav_homepage {
+    margin-left: 50px;
+}
+.sidenav li {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav_subscribe_button {
+    border-top: 1px solid black;
+    padding-top: 30px;
+}
+.SubscribeNow {
+    padding: 0.875rem 0.625rem;
+    margin: 0px 50px 20px;
+    width: 230px;
+    justify-content: center;
+    font-weight: bold;
+    top: -50px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #7d161e; /* ok */
+    color: #fff;
+    border: none;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+}
+
+.collapsible:after {
+    content: ">";
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 17px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.sidenav_inlist {
+    list-style-type: none;
+    margin: 0px;
+}
+
+
+
+
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/* stile menu laterale interno */
+
+.sidenav_subscribe_button
+{
+    border-top: 1px solid black;
+    padding-top: 30px;
+}
+.SubscribeNow
+{
+    padding: 0.875rem 0.625rem;
+    margin: 0 50px 0px;
+    width: 230px;
+    justify-content: center;
+    font-weight: bold;
+    top: -50px;
+    text-align: center;
+    border-radius: 4px;
+    background-color:#7D161E ; /* ok */
+    color: #fff;
+    border: none;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------/
+
+/* codice riguardandi le colonne */
+
+/* Stile del titolo */
+
+h1.titolo
+{
+    text-align: center; /* Testo centrato */
+    margin-bottom: 10px; /* Margine inferiore */
+    margin-top: 70px;
+    font-size: 50px;
+    font-family: PTSerif, serif ;
+}
+
+
+/* stile sottomenu */
+
+.horizontal-buttons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    background-color: white;
+}
+.horizontal-buttons-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.horizontal-buttons-list li {
+    margin-right: 10px; /* Spazio tra i bottoni */
+}
+
+.horizontal-menu-button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.horizontal-menu-button:hover
+{
+    color: red;
+    text-decoration: underline;
+}
+/* ----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+ */
+
+.trend
+{
+    text-align: left;
+    font-weight: bold;
+    color: darkred;
+    margin-left: 3%;
+    padding: 30px;
+    font-size: 15px;
+}
+
+/*stile sub menu */
+
+.sub-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+
+    background-color: white;
+}
+.sub-menu-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+.sub-menu-list li {
+    margin-right: 10px; /* Spazio tra i bottoni */
+}
+
+.sub-menu-ref {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.sub-menu-ref:hover
+{
+    color: darkred;
+}
+
+
+
+
+
+
+/* Stile della griglia di layout */
+.main
+{
+    width: 100%;
+    align-items: center;
+
+    justify-content: center;
+
+}
+.main_container {
+    width: 1300px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+
+
+}
+.main_colonne
+{
+    display: flex;
+}
+.ads
+{
+    width: 25%;
+}
+
+
+
+.colonna-principale {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 55%;
+    margin-right: 8px;
+}
+
+.sezione_main
+{
+
+}
+.contenuto
+{
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    align-items: center;
+}
+
+.contenuto.testo
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Il testo va disposto in colonna */
+}
+.main_image
+{
+    height: auto; /* Altezza automatica, per mantenere le proporzioni */
+    margin-left: 20px; /* Margine a sinistra per separare l'immagine dal testo */
+    width: 55%;
+
+
+}
+.articoli{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.contenuto_articoli_sx {
+    width: 48% ;
+    display: flex;
+
+    margin-right: 9px;
+    flex-direction: column;
+}
+.contenuto_articoli_dx {
+    width: 48% ;
+    display: flex;
+
+    margin-left: 8px;
+    flex-direction: column;
+}
+
+.articoli_image {
+    width:100%;
+    height: 200px;
+    margin-right: 10px; /* Spazio tra l'immagine e il testo */
+    margin-bottom: 10px;
+
+}
+
+.testo_articoli {
+
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------*/
+
+
+.colonna-secondaria {
+
+    margin-bottom: 20px;
+    width: 17%;
+    margin-right: 0;
+}
+
+.articolo {
+    margin-bottom: 20px;
+}
+
+/* colonna 2*/
+.colum2-title
+{
+    border-bottom: 2px solid darkred;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.articoli-2
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.articolo
+{
+
+    font-weight: bold;
+    color: black;
+    display: inline;
+}
+
+.date
+{
+    font-size: 10px;
+    color : gray;
+    display: inline;
+}
+.signup-box
+{
+    background-color: lightgrey;
+    text-align: center;
+    padding: 10px;
+}
+.sign
+{
+    font-size: large;
+    font-weight: bold;
+}
+.article-signup-button
+{
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    background-color:#7D161E ; /* ok */
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* ok */
+}
+
+/*-----------------------------MOST POPULAR---------------------------------------*/
+
+.container_2 {
+    width: 75%;
+
+}
+
+.most_popular {
+    margin-top: 20px;
+
+
+}
+
+.most_popular_title {
+    color: #7D161E;
+    border-bottom: solid 2px #7D161E;
+    margin-bottom: 20px;
+}
+
+.most_popular_lista {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.most_popular_lista li {
+    margin-bottom: 20px;
+    position: relative; /* Posizione relativa per il posizionamento dell'indice */
+    padding-left: 20px; /* Spazio per l'indice */
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.most_popular_lista li:before {
+    content: counter(list-counter1); /* Mostra il numero dell'elenco */
+    counter-increment: list-counter1; /* Incrementa il contatore */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #7D161E;
+    color: white; /* Testo bianco */
+    text-align: center;
+    line-height: 30px;
+    position: absolute; /* Posizione assoluta rispetto al padre */
+    left: 0; /* Allineamento a sinistra */
+    top: 0; /* Allineamento in alto */
+    margin-left: -20px; /* Offset per posizionamento */
+    font-weight: bold;
+}
+
+/* Contatore separato per ogni lista */
+
+#list1 { counter-reset: list-counter1; }
+#list2 { counter-reset: list-counter2 5; }
+
+#list2 li:before{
+    content:counter(list-counter2);
+    counter-increment:list-counter2;
+}
+
+
+/*----------------------------------------------3 COLONNE----------------------------------------------------------*/
+
+.colum_conteiner
+{
+
+
+    width: 75%;
+}
+.three_columns_conteiner
+{
+    margin-top: 20px;
+    flex: 1;
+}
+
+.three_columns {
+    width: 33%;
+    padding: 15px;
+
+}
+
+.three_columns:last-child {
+    margin-right: 0;
+}
+
+.column-title {
+    border-bottom: 2px solid #7D161E;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: medium;
+    position: relative;
+}
+
+.column-title h4 {
+    margin: 0;
+
+}
+
+/* Aggiunta del simbolo ">" */
+.column-title:after {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    right: 5px; /* Distanza dal testo */
+    color: #7D161E; /* Colore rosso */
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+.image_title
+{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 5px;
+}
+
+.description p {
+
+}
+
+.section-title {
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/*------------------------------------------PHOTOS-------------------------------*/
+/* Stile per il contenitore principale */
+.photos_container {
+    width: 75%;
+}
+
+/* Stile per il titolo */
+.photos_title {
+    width: 100%;
+    border-bottom: 2px solid #7D161E;
+    display: inline-block;
+    position: relative;
+}
+
+/* Stile per aggiungere il simbolo ">" accanto al titolo */
+.photos_title:after {
+    content: ">";
+    position: absolute;
+    right: 850px;
+    color:#7D161E;
+    font-weight: bold;
+    font-size: 30px;
+    top: -7px;
+
+
+}
+
+/* Stile per la struttura a due colonne */
+.photos {
+    display: flex;
+}
+
+/* Stile per la colonna di sinistra */
+.left_column {
+    width: 70%;
+}
+
+/* Stile per la colonna di destra */
+.right_column {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+/* Stile per l'immagine principale */
+.main_image_photo img {
+   flex: 1;
+    align-items: center;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+/* Stile per il titolo e la descrizione dell'immagine principale */
+.main_image_photo h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.main_image_photo p {
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Stile per gli articoli nella colonna di destra */
+.article {
+    margin-bottom: 20px;
+
+    padding: 4px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+}
+
+.article img {
+    width: 90px;
+    height: 75px;
+    margin-right: 10px;
+}
+
+.article h6 {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* ----------------------------------SHOWMOREPHOTOS______________________________*/
+.show-more-photos_container {
+    width: 75%;
+
+    text-align: center;
+
+}
+.btn-show-more
+{
+    color:#7D161E;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.btn-show-more :hover
+{
+    color:black;
+}
+
+/*---------------------------------------------POLITICS--------*/
+.politics_conteiner
+{
+    width: 75%;
+    margin-top: 20px;
+
+}
+.politics_title
+{
+    width: 100%;
+    border-bottom: 2px solid #7D161E;
+    display: inline-block;
+    position: relative;
+}
+.politics
+{
+    display: flex;
+}
+.politics_title:after {
+    content: ">";
+    position: absolute;
+    right: 850px;
+    color:#7D161E;
+    font-weight: bold;
+    font-size: 30px;
+    top: -7px;
+
+
+}
+.politics_left_column
+{
+    display: flex;
+    width: 65%;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.politics_main_text
+{
+    width: 50%;
+margin-left: 10px;
+
+}
+.politics_main_text h3
+{
+    font-weight: bold;
+    font-size: 25px;
+}
+.politics_main_text p
+{
+    font-size: 15px;
+}
+.politics_right_column {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 20px;
+}
+.politics_article
+{
+    margin-bottom: 10px;
+    padding: 8px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+}
+.politics_article h6 {
+    font-size: 0.875rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/*------------------OPINION---------------------------*/
+.opinion_conteiner
+{
+    width: 75%;
+    margin-top: 20px;
+
+}
+.opinion_title
+{
+    width: 100%;
+    border-bottom: 2px solid #7D161E;
+    display: inline-block;
+    position: relative;
+}
+.opinion
+{
+    display: flex;
+}
+.opinion_title:after {
+    content: ">";
+    position: absolute;
+    right: 850px;
+    color:#7D161E;
+    font-weight: bold;
+    font-size: 30px;
+    top: -7px;
+
+
+}
+.opinion_left_column
+{
+    display: flex;
+    width: 65%;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.opinion_main_text
+{
+    width: 50%;
+    margin-left: 10px;
+
+}
+.opinion_main_text h3
+{
+    font-weight: bold;
+    font-size: 25px;
+}
+.opinion_main_text p
+{
+    font-size: 15px;
+}
+.opinion_right_column {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 20px;
+}
+.opinion_article
+{
+    margin-bottom: 10px;
+    padding: 8px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+}
+.opinion_article h6 {
+    font-size: 0.875rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.education_title
+{
+    width: 100%;
+    border-bottom: 2px solid #7D161E;
+    display: inline-block;
+    position: relative;
+}
+.education_title:after {
+    content: ">";
+    position: absolute;
+    right: 815px;
+    color:#7D161E;
+    font-weight: bold;
+    font-size: 30px;
+    top: -7px;
+
+
+}
+
+.enviroment_title
+{
+    width: 100%;
+    border-bottom: 2px solid #7D161E;
+    display: inline-block;
+    position: relative;
+}
+.enviroment_title:after {
+    content: ">";
+    position: absolute;
+    right: 780px;
+    color:#7D161E;
+    font-weight: bold;
+    font-size: 30px;
+    top: -7px;
+
+
+}
+.crime_title
+{
+    width: 100%;
+    border-bottom: 2px solid #7D161E;
+    display: inline-block;
+    position: relative;
+}
+.crime_title :after
+{
+    content: ">";
+    position: absolute;
+    right: 700px;
+    color:#7D161E;
+    font-weight: bold;
+    font-size: 30px;
+    top: -7px;
+}
+
+/*-----------------------------------------FOOTER-----------------------------------*/
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px ;
+    border-top: 1px solid #e9ecef;
+    margin-top: 40px;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.2) inset; /* Effetto ombra */
+    width: 100%;
+}
+.footer_title
+{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.footer_row{
+    background-color: #f8f9fa;
+    width : 100%;
+
+    display:flex;
+    flex-wrap:wrap;
+}
+.footer-column
+{
+    flex: 1 1 150px;
+    list-style-type: none;
+    width : 17%;
+    margin :20px;
+    padding : 0px;
+}
+.footer-column h5 {
+    font-weight: bold;
+    font-size: 16px;
+    border-top: 1px solid #000;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    padding-top:10px;
+
+}
+
+
+.footer-column li {
+    color: #000;
+    text-decoration: none;
+    display: block;
+
+    margin-bottom: 2px;
+    font-size: 16px;
+
+    padding : 5px;
+}
+
+.footer-column li:hover {
+    text-decoration: underline;
+}
+.footer .subscribe-button {
+    display: block;
+
+    padding: 10px 20px;
+    background-color: #7D161E;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+
+
+    font-size: 15px;
+}
+.footer_button_border
+{
+    margin-top: 20px;
+    border-top: 1px solid #000;
+}

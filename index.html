@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/SedanSC-Regular.ttf">
+    <link rel="stylesheet" href="fonts/PTSerif-Bold.ttf">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>TheDenverPst_project</title>
+</head>
+<body>
+
+<div id="overlay" onclick="closeNav()"></div>
+
+
+<!--  menu fisso alto -->
+
+
+<div class="finestra-fissa">
+
+    <!--  apertura menu laterale -->
+    <div class="button-container">
+        <img src="source/icons8-menu-20.png" alt="Icona" class="menu_icon" width="20" height="20" alt="Icona"
+             onclick="openNav()">
+        <div id="mySidenav" class="sidenav">
+            <div class="sidenav_subscribe_button"><button class="SubscribeNow">Subscribe Now</button></div>
+            <ul class="sidebar_list">
+                <li class="sidenav_homepage" href="#">Homepage</li>
+                <li class="collapsible" href="#">News</li>
+                <div class="
+                     content">
+                    <ul class="sidenav_inlist">
+                        <li>Latest Headlines</li>
+                        <li>Colorado News</li>
+                        <li>Politics</li>
+                        <li>Elections</li>
+                        <li>Crime</li>
+                    </ul>
+                </div>
+                <li class="collapsible" href="#">Sport</li>
+                <div class="
+                     content">
+                    <ul class="sidenav_inlist">
+                        <li>Sport</li>
+                        <li>Sport Columnist</li>
+                        <li>Denver Broncos</li>
+                        <li>Colorado Rockies</li>
+                        <li>Denver Nuggets</li>
+                    </ul>
+                </div>
+                <li class="collapsible" href="#">Business</li>
+                <div class="
+                     content">
+                    <ul class="sidenav_inlist">
+                        <li>Business</li>
+                        <li>Real Estate</li>
+                        <li>Airlines</li>
+                        <li>Economy</li>
+                        <li>Energy</li>
+                    </ul>
+                </div>
+
+                <li class="collapsible" href="#">The Know</li>
+                <div class="
+                     content">
+                    <ul class="sidenav_inlist">
+                        <li>Food and Drink</li>
+                        <li>Art</li>
+                        <li>Culture</li>
+                        <li>TV and Streaming</li>
+                        <li>Movies</li>
+                        <li>Music</li>
+                    </ul>
+                </div>
+                <li class="collapsible" href="#">Outdoors</li>
+                <div class="
+                     content">
+                    <ul class="sidenav_inlist">
+                        <li>Hiking</li>
+                        <li>Fall colors</li>
+                        <li>Culture</li>
+                        <li>Cycling</li>
+                        <li>Running</li>
+                        <li>Camping</li>
+                    </ul>
+                </div>
+                <li class="collapsible" href="#">Opinion</li>
+                <div class="
+                     content">
+                    <ul class="sidenav_inlist">
+                        <li>Opinion</li>
+                        <li>Editorials</li>
+                        <li>Columinist</li>
+                        <li>Letters</li>
+                        <li>Cartoons</li>
+                        <li>Endorsement</li>
+                    </ul>
+                </div>
+                <li class="collapsible" href="#">Obituaries</li>
+            </ul>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+
+        <script src="script.js"></script>
+
+
+
+        <button class="menu_button" onclick="openNav()">All Sections</button>
+        <button class="Subscribe">Subscribe</button>
+        <button class="LogIN">Login</button>
+        <img src="source/search_icon.png" alt="Icona" class="search_icon" width="20" height="20">
+    </div>
+
+</div>
+<!--  titolo e menu principale -->
+<h1 class="titolo">The Denver Post</h1>
+
+<div class="horizontal-buttons">
+    <ul class="horizontal-buttons-list">
+        <li><a href="#" class="horizontal-menu-button">News</a></li>
+        <li><a href="#" class="horizontal-menu-button">Sport</a></li>
+        <li><a href="#" class="horizontal-menu-button">Buisness</a></li>
+        <li><a href="#" class="horizontal-menu-button">The Know</a></li>
+        <li><a href="#" class="horizontal-menu-button">Outdoors</a></li>
+        <li><a href="#" class="horizontal-menu-button">Opinion</a></li>
+        <li><a href="#" class="horizontal-menu-button">Classifieds</a></li>
+        <li><a href="#" class="horizontal-menu-button">Obituaries</a></li>
+    </ul>
+
+</div>
+<!-- divider -->
+<hr>
+<!--submenu -->
+
+<div class="sub-menu">
+    <ul class="sub-menu-list">
+        <li><a class="trend"> TRENDING: </a></li>
+        <li><a href="#" class="sub-menu-ref">Farmer Market Guide</a></li>
+        <li><a href="#" class="sub-menu-ref">"Fyre festival book"</a></li>
+        <li><a href="#" class="sub-menu-ref">Who are Colorado Wolfes?</a></li>
+        <li><a href="#" class="sub-menu-ref">Colorado bill Tracker</a></li>
+    </ul>
+</div>
+<!--  colonne principali -->
+
+
+<div class="main">
+
+    <div class="main_container">
+        <div class="main_colonne">
+            <div class="colonna-principale">
+                <section class="sezione_main">
+                    <div class="contenuto">
+                        <div class="testo">
+                            <h3>Century-old Brighton veggie farm could close over developer’s eminent domain
+                                petition</h3>
+                            <p>A Brighton vegetable farm that started during the Great Depression says it will have to
+                                close shop if a residential developer takes possession of a swath of its land through
+                                eminent domain.</p>
+                        </div>
+                        <img src="source/img.png" alt="Immagine" class="main_image">
+
+                    </div>
+                    <hr>
+                </section>
+                <hr>
+                <div class="articoli">
+
+                    <div class="contenuto_articoli_sx">
+
+                        <img src="source/img1.webp" alt="Immagine 1" class="articoli_image">
+                        <div class="testo_articoli">
+                            <h4>Denver apartments’ unreliable water taps, roach infestations and overflowing garbage
+                                spur change in Colorado law</h4>
+
+                        </div>
+                    </div>
+                    <div class="contenuto_articoli_dx">
+
+                        <img src="source/img2.webp" alt="Immagine 1" class="articoli_image">
+                        <div class="testo_articoli">
+                            <h4>Smaller homes on smaller lots: Could “light touch density” help erase Colorado’s housing
+                                deficit?</h4>
+
+                        </div>
+                    </div>
+                    <div class="contenuto_articoli_sx">
+
+                        <img src="source/trail.png" alt="Immagine 1" class="articoli_image">
+                        <div class="testo_articoli">
+                            <h4>Fairmount Trail a great place for long runs at the edge of suburbia in Jefferson
+                                County</h4>
+
+                        </div>
+                    </div>
+                    <div class="contenuto_articoli_dx">
+
+                        <img src="source/Colorado_workers.png" alt="Immagine 1" class="articoli_image">
+                        <div class="testo_articoli">
+                            <h4>Colorado agricultural workers can now unionize. So why aren’t they?</h4>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <section class="colonna-secondaria">
+                <h3 class="colum2-title">LATEST HEADLINES</h3>
+                <ul class="articoli-2">
+                    <li>
+                        <div class="article-box">
+                            <p class="articolo">
+                                Chat GPT is transforming Colorado education, for better and for worse. Expert say maybe
+                                that's a good thing.
+                            <h5 class="date">1 day ago</h5>
+                            </p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="article-box">
+                            <p class="articolo">Renck: The Nuggets have to beat Anthony Edwards four times? This is
+                                going to be a problem.
+                            <h5 class="date">1 day ago</h5>
+                            </p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="article-box">
+                            <p class="articolo"> Colorado’s community health centers are struggling financially as
+                                patients lose Medicaid coverage
+                            <h5 class="date">1 day ago</h5>
+                            </p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="article-box">
+                            <p class="articolo">Colorado legislature: Property tax agreement is elusive; land-use bills
+                                advance; medical malpractice deal
+                            <h5 class="date">13 hours ago</h5>
+                            </p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="article-box">
+                            <p class="articolo">“Espiritu Hermosx” at the Museo de las Americas explores LGBTQ+ identity
+                                through the eyes of Latinx artists
+                            <h5 class="date">40 mins ago</h5>
+                            </p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="article-box">
+                            <p class="articolo">New Sara Paretsky novel and more mysteries to solve this month
+                            <h5 class="date">40 mins ago</h5>
+                            </p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="article-box">
+                            <p class="articolo">Ask Amy: Divorcing dad needs to put son first
+                            <h5 class="date">2 hours ago</h5>
+                            </p>
+                            <hr>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="signup-box">
+                            <p class="sign">Sign up for Newsletter and Alert
+                            </p>
+                            <button class="article-signup-button">SIGN UP</button>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+            <div class="ads">
+
+            </div>
+
+        </div>
+
+        <!------------------MOST POPULAR SECTION-------------------------------------------------------------------  -->
+
+        <div class="container_2">
+            <div class="most_popular">
+                <h4 class="most_popular_title">MOST POPULAR</h4>
+                <div class="container_2_1">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ol class="most_popular_lista" id="list1">
+                                <li>Avs' Valeri Nichushkin suspended six months, re-enters NHL Player Assistance
+                                    Program
+                                </li>
+                                <li>Red Lobster closes several Denver-area restaurants</li>
+                                <li>More than a dozen gigantic, decades-old fish removed from Arvada pond</li>
+                                <li>Keeler: Avalanche gave Valeri Nichushkin a second chance. He blew it. It's time to
+                                    move on. From him.
+                                </li>
+                                <li>Avalanche players express shock, disappointment in Valeri Nichushkin news: "He made
+                                    his decisions"
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-md-6">
+                            <ol class="most_popular_lista" id="list2">
+                                <li>Renck: NBA disrespects fans with late tip-off time for Game 5 between Nuggets,
+                                    Timberwolves
+                                </li>
+                                <li>Avalanche defenseman Devon Toews to miss Game 4 because of an illness, team says
+                                </li>
+                                <li>As Kris Bryant attempts to resurrect Rockies career, former MVP can't hide his
+                                    frustration: "It’s through the roof"
+                                </li>
+                                <li>Plan a perfect weekend in Colorado's secret wine town</li>
+                                <li>Jamal Murray's half-court shot and a series-shifting 20 seconds for the Nuggets:
+                                    "We're a team that believes"
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------3 columns section ---------------------------------------------  -->
+        <div class="colum_conteiner">
+            <div class="three_columns_conteiner">
+                <div class="row">
+                    <div class="three_columns">
+                        <div class="column-title">
+                            <h4>SPORT</h4>
+                        </div>
+                        <div class="image-container">
+                            <img src="source/images/hockey.png" alt="Image 1">
+                        </div>
+                        <div class="image_title">
+                            <h5>Avalanche players express shock, disappointment in Valeri Nichushkin news: “He made his
+                                decisions”
+                            </h5>
+                        </div>
+                        <div class="description">
+                            <p>For the second postseason in a row, Valeri Nichushkin's absence has cast a long shadow
+                                over the Colorado Avalanche's Stanley Cup dreams.</p>
+                        </div>
+                        <div class="section-title">
+                            <h6>
+                                Stars use dominant start in Game 4 win to push shorthanded Avalanche to brink of
+                                elimination</h6>
+                        </div>
+                        <div class="section-title">
+                            <h6>
+                                Avs-Stars Game 4 Quick Hits: Avalanche’s 3-1 deficit and this much bad mojo feels like
+                                too steep a hill to climb </h6>
+                        </div>
+                        <div class="section-title">
+                            <h6>
+                                Rockies walk 11 Padres but escape with fifth straight victory </h6>
+                        </div>
+                    </div>
+
+                    <div class="three_columns">
+                        <div class="column-title">
+                            <h4>DENVER NUGGETS</h4>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://via.placeholder.com/304x220" alt="Image 2">
+                        </div>
+                        <div class="image_title">
+                            <h5>
+                                Anthony Edwards on Nikola Jokic’s masterful Game 5 performance: “I just laugh. That’s
+                                all I can do” </h5>
+                        </div>
+                        <div class="description">
+                            <p>Rudy Gobert’s effort was valiant. But Nikola Jokic was too darn good</p>
+                        </div>
+                        <div class="section-title">
+                            <h6>
+                                Nikola Jokic on Game 5 slam dunk amid 40-point performance: “I’m a freak of
+                                nature” </h6>
+                        </div>
+                        <div class="section-title">
+                            <h6>
+                                Nuggets 3-pointers: Aaron Gordon the X-factor in Denver’s 112-97 win over
+                                Minnesota </h6>
+                        </div>
+                        <div class="section-title">
+                            <h6>
+                                Nuggets playoff rotation: Why Justin Holiday is playing more, and Peyton Watson is
+                                playing less in Timberwolves series </h6>
+                        </div>
+                    </div>
+
+                    <div class="three_columns">
+                        <div class="column-title">
+                            <h4>RESTAURANT FOOD AND DRINK</h4>
+                        </div>
+                        <div class="image-container">
+                            <img src="https://via.placeholder.com/304x220" alt="Image 3">
+                        </div>
+                        <div class="image_title">
+                            <h5>
+                                Red Lobster closes several Denver-area restaurants </h5>
+                        </div>
+                        <div class="description">
+                            <p>
+                                At least four Red Lobster restaurants near Denver appear to have closed as the company
+                                shutters locations nationwide. </p>
+                        </div>
+                        <div class="section-title">
+                            <h6>
+                                8 ice cream shops in and around Denver worth screaming about this summer </h6>
+                        </div>
+                        <div class="section-title">
+                            <h6>
+                                Sushi Den reopens for lunch service four years after start of pandemic </h6>
+                        </div>
+                        <div class="section-title">
+                            <h6>
+                                What’s in a name: Breweries can’t just focus on beer anymore </h6>
+                        </div>
+                        <div class="section-title">
+                            <h6>
+
+                                Misfit Snack Bar will close its East Colfax spot at Middleman </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------------------PHOTO SECTION -------------------------------------------->
+        <div class="photos_container">
+            <h4 class="photos_title">PHOTOS</h4>
+            <div class="photos">
+                <div class="left_column">
+                    <div class="main_image_photo">
+                        <img src="https://via.placeholder.com/590x420 " alt="Main Image">
+                        <h3>PHOTOS: Denver Nuggets outpace Minnesota Timberwolves to win game 5 of the series 112-97
+                        </h3>
+                        <p>The Denver Nuggets outpaced the Minnesota Timberwolves to win game 5 of the series 112-97 on
+                            Tuesday night, May 14, 2024, at Ball Arena in Denver, Colorado. Denver now leads the series
+                            3-2.</p>
+                    </div>
+                </div>
+                <div class="right_column">
+                    <div class="article">
+                        <img src="https://via.placeholder.com/90x75 " alt="Article Image">
+                        <h6>
+                            PHOTOS: Colorado Avalanche flounder 5-1 vs. Dallas Stars in Game 4 of 2024 NHL Stanley Cup
+                            Playoffs second round </h6>
+                    </div>
+                    <div class="article">
+                        <img src="https://via.placeholder.com/90x75 " alt="Article Image">
+                        <h6>
+
+                            PHOTOS: Denver Nuggets drop game 6 of series to Minnesota Timberwolves 115-70 </h6>
+                    </div>
+                    <div class="article">
+                        <img src="https://via.placeholder.com/90x75 " alt="Article Image">
+                        <h6>
+
+
+                            PHOTOS: Colorado Avalanche beat Dallas Stars 5-3 in Game 5 of 2024 NHL Stanley Cup Playoffs
+                            second round </h6></div>
+                    <div class="article">
+                        <img src="https://via.placeholder.com/90x75 " alt="Article Image">
+                        <h6>
+                            PHOTOS: Colorado Avalanche lose to the Dallas Stars 4-1 in Game 3 of 2024 NHL Stanley Cup
+                            Playoffs second round
+                        </h6>
+                    </div>
+                    <div class="article">
+                        <img src="https://via.placeholder.com/90x75 " alt="Article Image">
+                        <h6>
+                            PHOTOS: Denver Nuggets drop game 6 of series to Minnesota Timberwolves 115-70 </h6></div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="show-more-photos_container">
+
+            <div class="show-more-photos">
+                <hr>
+                <a href="#" class="btn-show-more">SHOW MORE PHOTOS</a>
+            </div>
+        </div>
+
+
+        <!--- struttura articoli per genere -->
+
+        <div class="politics_conteiner">
+            <h4 class="politics_title">POLITICS</h4>
+            <div class="politics">
+                <div class="politics_left_column">
+                    <div class="politics_main_image_photo">
+                        <img src="https://via.placeholder.com/273x171 " alt="Main Image">
+                    </div>
+                    <div class="politics_main_text">
+                        <h3>Colorado is about to wipe 100,000 criminal conviction from public record </h3>
+                        <p>More than 100,000 Colorado criminal convictions could be wiped from the public record this
+                            year...</p>
+                    </div>
+                </div>
+                <div class="politics_right_column">
+                    <div class="politics_article">
+                        <h6>Colorado will ease path to collage by paying back 2 years of tuition for lower-income
+                            students</h6>
+                    </div>
+                    <div class="politics_article">
+                        <h6>
+                            Colorado’s demand for water is slated to surpass supplies by 2050. Did lawmakers do enough
+                            to address the crisis? </h6>
+                    </div>
+                    <div class="politics_article">
+                        <h6>
+                            Colorado governor signs bill targeting airport impacts, but fight against noise and lead
+                            continues </h6>
+                    </div>
+                    <div class="politics_article">
+                        <h6>
+                            Colorado voters will decide abortion rights question after constitutional amendment
+                            qualifies for ballot </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  OPINION -->
+        <div class="opinion_conteiner">
+            <h4 class="opinion_title">OPINION</h4>
+            <div class="opinion">
+                <div class="opinion_left_column">
+                    <div class="opinion_main_image_photo">
+                        <img src="https://via.placeholder.com/273x171 " alt="Main Image">
+                    </div>
+                    <div class="opinion_main_text">
+                        <h3>
+                            Suthers and Weiser: Could a Civics Bee help save the republic and the Colorado Way? </h3>
+                        <p>The strength of our democracy depends on people engaging in robust, respectful disagreement.
+                            When disagreements...</p>
+                    </div>
+                </div>
+                <div class="opinion_right_column">
+                    <div class="opinion_article">
+                        <h6>
+                            Editorial: Vail cancels a Lakota artist for her Palestinian sympathies, chilling her
+                            speech </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+                            Editorial: In Colorado, developers can take your property for their benefit — just ask
+                            Palizzi Farms </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+                            Kafer: Students’ pro-Palestine message is lost in hostility of campus protests </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+                            Opinion: Finally, the Bureau of Land Management acknowledges its conservation mandate </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIUSO STRUTTURA OPINION PER LO STESSO CSS --->
+        <div class="opinion_conteiner">
+            <h4 class="education_title">EDUCATION</h4>
+            <div class="opinion">
+                <div class="opinion_left_column">
+                    <div class="opinion_main_image_photo">
+                        <img src="https://via.placeholder.com/273x171 " alt="Main Image">
+                    </div>
+                    <div class="opinion_main_text">
+                        <h3>
+                            Pro-Palestine encampment on Denver’s Auraria Campus empties 23 days later
+                        </h3>
+                        <p>The anti-war encampment on Denver's Auraria Campus is now empty after pro-Palestine protests
+                            first began...</p>
+                    </div>
+                </div>
+                <div class="opinion_right_column">
+                    <div class="opinion_article">
+                        <h6>
+
+                            Auraria Campus closes, CU Denver classes move online amid ongoing pro-Palestine
+                            encampment </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            Goldilocks and the 3 jurors: Denver students put beloved fairy tale on trial </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            10th Circuit judges in Denver voice doubts about ruling on transgender woman’s admission
+                            into Wyoming sorority </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            DPS, teachers union clash as school district says it can’t fully fund next year’s
+                            raises </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="opinion_conteiner">
+            <h4 class="education_title">THE KNOW</h4>
+            <div class="opinion">
+                <div class="opinion_left_column">
+                    <div class="opinion_main_image_photo">
+                        <img src="https://via.placeholder.com/273x171 " alt="Main Image">
+                    </div>
+                    <div class="opinion_main_text">
+                        <h3>
+
+                            Running is back, leaving the post-pandemic hangover far behind
+                        </h3>
+                        <p>"We’ve added 13 more start waves to accommodate a larger field, we’ve ordered more
+                            shirts,...</p>
+                    </div>
+                </div>
+                <div class="opinion_right_column">
+                    <div class="opinion_article">
+                        <h6>
+
+                            Things to to do this weekend: Interactive bubbles, Denver comics fest and more </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            5 things you didn’t know about Red Rocks, from hidden tunnels to a lot of White Claw </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            Former Denver Bronco opens outdoor guide company where people of color are welcomed and
+                            represented </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            New gondolas in the works for two Colorado ski resorts </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="opinion_conteiner">
+            <h4 class="education_title">BUSINESS</h4>
+            <div class="opinion">
+                <div class="opinion_left_column">
+                    <div class="opinion_main_image_photo">
+                        <img src="https://via.placeholder.com/273x171 " alt="Main Image">
+                    </div>
+                    <div class="opinion_main_text">
+                        <h3>
+
+                            Colorado employment rose by only 300 jobs in April
+
+                        </h3>
+                        <p>Colorado employers added a meager 300 jobs in April, with the private sector losing 600..</p>
+                    </div>
+                </div>
+                <div class="opinion_right_column">
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            As Denver office vacancy rates rise again, so does optimism for downtown’s future </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            Sponsored: Colorado’s housing market in April sees surge in available homes </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            More than a third of the state’s 32 largest municipalities lost population last year </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            Feds say former LoDo hotel owner defrauded pandemic program of $450K
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="opinion_conteiner">
+            <h4 class="enviroment_title">ENVIROMENT</h4>
+            <div class="opinion">
+                <div class="opinion_left_column">
+                    <div class="opinion_main_image_photo">
+                        <img src="https://via.placeholder.com/273x171 " alt="Main Image">
+                    </div>
+                    <div class="opinion_main_text">
+                        <h3>
+
+                            Plan to use cyanide to extract gold from Leadville mining waste has residents concerned
+
+                        </h3>
+                        <p>
+                            A company in Leadville wants to truck 1.2 million tons of mining waste to a... </p>
+                    </div>
+                </div>
+                <div class="opinion_right_column">
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            Colorado wolf found dead last month was likely killed by a mountain lion, federal officials
+                            say
+                        </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            Brighton farm facing condemnation by homebuilder draws support from hundreds at court
+                            hearing
+                        </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            More than a dozen gigantic, decades-old fish removed from Arvada pond
+                        </h6></div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            Century-old Brighton veggie farm could close over developer’s eminent domain
+                            petition </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="opinion_conteiner">
+            <h4 class="crime_title">CRIME AND PUBLIC SAFETY</h4>
+            <div class="opinion">
+                <div class="opinion_left_column">
+                    <div class="opinion_main_image_photo">
+                        <img src="https://via.placeholder.com/273x171 " alt="Main Image">
+                    </div>
+                    <div class="opinion_main_text">
+                        <h3>
+
+                            Armed man shot, killed by Colorado Springs police responding to call for suicidal male with firearm
+
+                        </h3>
+                        <p>
+                            Around 10:30 p.m. Saturday, officers received a call about a suicidal male with a gun... </p>                    </div>
+                </div>
+                <div class="opinion_right_column">
+                    <div class="opinion_article">
+                        <h6>
+
+
+
+                            3-year-old boy with special needs reported missing in Rocky Ford
+                        </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+
+                            Hoosier Pass closed after police chase ends in car crash
+                        </h6>
+                    </div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+
+                            Rescue in Loveland after 60-foot fall from cliff		                        </h6></div>
+                    <div class="opinion_article">
+                        <h6>
+
+
+                            One dead, one in critical condition after car crash in Commerce City		 </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--                        FOOOTER             -->
+
+    <div class="footer">
+        <h2 class="footer_title">The Denver Post</h2>
+        <div class="footer_container">
+
+            <div class="footer_row">
+                <ul class="footer-column">
+                    <li><h5>SUBSCRIBE</h5></li>
+                    <li href="#">News Alerts</li>
+                    <li href="#">Submit a News Tip</li>
+
+                    <li><h5>MEMBER SERVICES</h5></li>
+                    <li href="#">Become a Member</li>
+                    <li href="#">Place a Hold</li>
+                    <li href="#">Digital Replica Edition</li>
+                    <li href="#">Sitemap</li>
+                </ul>
+                <ul class="footer-column">
+                    <li><h5>CLASSIFIEDS</h5></li>
+                    <li href="#">Autos</li>
+                    <li href="#">Real Estate</li>
+                    <li href="#">Jobs</li>
+                </ul>
+                <ul class="footer-column">
+                    <li><h5>CONTACT US</h5></li>
+                    <li href="#">Careers</li>
+                    <li href="#">Denver Post Store</li>
+                    <li href="#">Place an Obituary</li>
+                    <li href="#">Advertise With Us</li>
+                    <li href="#">Network Advertising</li>
+                    <li href="#">Privacy Policy</li>
+                    <li href="#">Accessibility</li>
+                </ul>
+                <ul class="footer-column">
+                    <li><h5>TODAY'S FRONT PAGE</h5></li>
+                    <li href="#">Back Issues</li>
+                    <li href="#">Archives</li>
+                    <li href="#">Mobile Apps</li>
+
+                    <div class="footer_button_border"><li href="#" class="subscribe-button">SUBSCRIBE NOW</li></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

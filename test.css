@@ -1,0 +1,43 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stile della griglia di layout */
+.container {
+    display: flex;
+}
+
+.colonna-principale {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+    margin-right: 5px;
+}
+
+.colonna-secondaria {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 20px;
+    margin-left: 5px;
+}
+
+.colonna-secondaria {
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.articolo {
+    margin-bottom: 20px;
+}
+
+/* Stili aggiuntivi a tua scelta */
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
